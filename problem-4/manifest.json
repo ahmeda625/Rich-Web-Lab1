@@ -7,5 +7,15 @@
         "matches": ["<all_urls>"],
         "js": ["Content.js"]
         }
-    ]
+    ],
+
+    "background": {
+        "service_worker": "worker_wrapper.js"
+    },
+
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "https://cdn.pixabay.com/photo/2015/07/25/07/59/the-button-859346_960_720.png",
+        "default_title": "AnimeIsGoated"
+    }
 }
