@@ -29,3 +29,14 @@ for (let i = 0; i < p.length; i++){
     p[i].innerText = "This website is about the great thing known as Anime";
 }
 
+chrome.runtime.sendMessage({type: "alertUser"});
+
+const btn = document.getElementById('btn')
+
+btn.addEventListener('click', function master(){
+    var master = document.getElementsByClassName("master2");
+    master[2].innerHTML = 'I hate Anime';
+})
+
+const masterEl = document.getElementById('master')
+console.log(masterEl) //<p id="master">Anime is Amazing</p> 
